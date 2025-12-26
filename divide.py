@@ -53,4 +53,7 @@ def split_into(file, n):
         print(f"Error: The file '{file}' was not found.")
 
 if __name__ == "__main__":
-    split_into(input("Enter the path to the PDF file: ").strip('"'), 2)
+    split_into(
+        input("Enter the path to the PDF file: ").strip('"'),
+        int(input("Enter the number of parts to split the PDF into: "))
+        )
